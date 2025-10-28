@@ -1,10 +1,10 @@
 class SiteNavbar extends HTMLElement {
-    connectedCallback() {
-        this.renderNavbar();
-    }
+  connectedCallback() {
+    this.renderNavbar();
+  }
 
-    renderNavbar() {
-        this.innerHTML = `
+  renderNavbar() {
+    this.innerHTML = `
             <!-- Navbar: single source of truth -->
             <nav class="navbar navbar-expand-lg navbar-light bg-info">
                 <div class="container-fluid">
@@ -36,7 +36,7 @@ class SiteNavbar extends HTMLElement {
                 </div>
             </nav>
         `;
-    }
+  }
 }
 
-customElements.define('site-navbar', SiteNavbar);
+customElements.define("site-navbar", SiteNavbar);
